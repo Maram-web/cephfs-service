@@ -1,0 +1,8 @@
+volumes:
+  - name: cephfs-vol
+    persistentVolumeClaim:
+      claimName: cephfs-pvc
+
+volumeMounts:
+  - mountPath: /mnt/cephfs
+    name: cephfs-vol
